@@ -5,4 +5,4 @@ Animate link:
     http://i.giphy.com/l3vR2iiaSSvdZ0Kys.gif
 
 Header config:
-    <ion-pane flex-header header-name="Block Name" header-img="image.png">
+    "<ion-pane flex-header header-name="Block Name" header-img="image.png">"
