@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Flex header</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/flex-header.directive.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body ng-app="app">
+
+    
+    <ion-pane flex-header header-name="Block Name" header-img="https://3.bp.blogspot.com/-W__wiaHUjwI/Vt3Grd8df0I/AAAAAAAAA78/7xqUNj8ujtY/s1600/image02.png">
+      
+      <!--<div id="blockNameHeader"></div>-->
+      <ion-content ng-class="setBar">
+      <!--<div id="blockHeader"></div>-->
+          Bem-vindo à Wikipédia, a enciclopédia livre, que qualquer um pode editar.
+
+O projeto Wikipédia foi iniciado em 15 de janeiro de 2001, na versão em língua inglesa. Em apenas um ano de existência, esta versão já possuía quase 10 mil artigos. Até hoje já foram criados mais de 14 milhões de artigos em centenas de línguas e dialetos (939 018 artigos na versão em português). Todos os dias, centenas de colaboradores de todas as partes do mundo editam milhares de artigos e criam muitos verbetes inteiramente novos.
+
+Todo o conteúdo do site é coberto pela licença de documentação livre GNU (GNU Free Documentation License) ou pela Creative Commons Attribution ShareAlike 3.0[1]. Os contributos são devidamente creditados a seus autores, enquanto que os direitos de cópia inclusos na licença garantem que o conteúdo da enciclopédia poderá sempre ser reproduzido e distribuído livremente, desde que sejam seguidas algumas regras simples.
+
+Nosso projeto da Wikipédia em português não é necessariamente, nem principalmente, um projeto de tradução da versão inglesa. Temos como objetivo criar a nossa própria enciclopédia, mesmo que traduzindo e adaptando alguns artigos de outras línguas. Começamos no final do ano 2001 e, nessa altura, ocorreu uma fase de "recrutamento" de pessoas interessadas em participar, em grande ou pequena escala.
+
+As primeiras políticas e normas de criação de páginas e algumas regras de organização foram então criadas, tendo sido, essencialmente, transpostas da versão inglesa.
+
+O mais importante a salientar é que isto não é um fórum de debates. É uma enciclopédia e portanto o conteúdo deve ser o mais imparcial de opiniões possível, sempre tentando entrar num consenso geral de ideias.
+
+Ajude-nos a divulgar o projeto e participe você também!
+
+Comparação com outras enciclopédia
+A Wikipédia é uma enciclopédia digital; a da foto acima é uma enciclopédia impressa.
+Enciclopédia Britannica Concisa
+Em inglês. Possui 28 mil artigos, mais de 2 mil imagens (0,07 por artigo) e de 10 mil pronúncias de palavras.
+
+Enciclopédia Britannica - Suíte impressa
+Em inglês. Mais de 65 mil artigos e de 44 milhões de palavras, com aproximadamente 680 palavras por artigo. Mais de 24 mil imagens (0,37 por artigo) e de 4 mil colaboradores (16,25 artigos por colaboradores), incluindo notáveis como Milton Friedman, Carl Sagan e Michael DeBakey.
+
+Microsoft Encarta 2002 (versão brasileira)
+Mais de 31 800 artigos e de 25 800 imagens.
+
+Enciclopédia Larousse
+Mais de 120 mil verbetes (15 mil sobre o Brasil).
+
+Barsa
+Em português. Micropédia: 46 860 verbetes. Macropédia: 7 904 artigos aprofundados com mais de 11 500 imagens. Datapédia: banco de dados com informações diversas e atlas com mais de 26 mil referências geográficas.
+      </ion-content>
+
+    </ion-pane>
+  </body>
+</html>
