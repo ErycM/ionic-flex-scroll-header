@@ -12,7 +12,7 @@ angular
         controller: function($scope, $element, $attrs, $ionicScrollDelegate, $window){
             $attrs["flexHeader"] = false;
             var checkState = false;
-            var ionContent = document.getElementsByTagName("ion-content")[0]; 
+            var ionContent = document.querySelector('ion-content');  
 
             $("ion-pane").append('<div id="blockNameHeader"></div>'); //insert html reference
             $(".scroll").prepend('<div id="blockHeader"></div>'); //below ion-content > .scroll
